@@ -4,296 +4,526 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshida Joshi | Full-Stack Architect & AI Innovator</title>
+    <title>Harshida Joshi | Developer & AI Builder</title>
     <meta name="description"
-        content="Portfolio of Harshida Joshi. 3+ years experience in Full-Stack development, Laravel ERPs, and AI integration.">
+        content="Portfolio of Harshida Joshi — Full Stack Developer & AI Solutions. 2 years experience building ERP systems and AI tools.">
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
         rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <a href="#home" class="skip-link">Skip to content</a>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand text-white fw-bold" href="#">HJ<span class="text-primary">.DEV</span></a>
-            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-                <i class="fas fa-bars"></i>
+    <div class="bg-mesh" aria-hidden="true"></div>
+    <div class="bg-orbs" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+    </div>
+
+    <!-- Walking companion — right sidebar -->
+    <aside class="walk-companion" id="walk-companion" aria-hidden="true">
+        <div class="walk-bubble" id="walk-bubble">Hello friend!</div>
+        <div class="walk-girl" id="walk-girl">
+            <svg viewBox="0 0 90 130" class="walk-svg" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="skinGrad" x1="0.3" y1="0" x2="0.7" y2="1">
+                        <stop offset="0%" stop-color="#ffe8d6" />
+                        <stop offset="55%" stop-color="#ffd4b8" />
+                        <stop offset="100%" stop-color="#f5b896" />
+                    </linearGradient>
+                    <linearGradient id="hairGrad" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#4c1d95" />
+                        <stop offset="100%" stop-color="#2e1065" />
+                    </linearGradient>
+                    <linearGradient id="dressGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#f9a8d4" />
+                        <stop offset="100%" stop-color="#c084fc" />
+                    </linearGradient>
+                    <linearGradient id="shoeGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#fda4af" />
+                        <stop offset="100%" stop-color="#e11d48" />
+                    </linearGradient>
+                    <radialGradient id="cheekGrad" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#fb7185" stop-opacity="0.55" />
+                        <stop offset="100%" stop-color="#fb7185" stop-opacity="0" />
+                    </radialGradient>
+                </defs>
+
+                <ellipse class="walk-shadow" cx="45" cy="125" rx="22" ry="4.5" fill="rgba(15,23,42,0.22)" />
+
+                <!-- Back pigtail -->
+                <ellipse cx="62" cy="36" rx="9" ry="14" fill="url(#hairGrad)" transform="rotate(18 62 36)" />
+                <circle cx="64" cy="24" r="5" fill="#f472b6" />
+
+                <!-- Back leg -->
+                <g class="leg leg-back">
+                    <path d="M38 92 L34 112" stroke="url(#skinGrad)" stroke-width="8" stroke-linecap="round" />
+                    <path d="M27 116 Q34 112 41 116 L41 120 Q34 124 27 120 Z" fill="url(#shoeGrad)" />
+                </g>
+
+                <!-- Front leg -->
+                <g class="leg leg-front">
+                    <path d="M52 92 L56 112" stroke="url(#skinGrad)" stroke-width="8" stroke-linecap="round" />
+                    <path d="M49 116 Q56 112 63 116 L63 120 Q56 124 49 120 Z" fill="url(#shoeGrad)" />
+                </g>
+
+                <!-- Dress -->
+                <path d="M30 68 Q45 62 60 68 L64 96 Q45 102 26 96 Z" fill="url(#dressGrad)" />
+                <path d="M30 68 Q45 74 60 68" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2" />
+                <circle cx="45" cy="70" r="3" fill="#fff" opacity="0.85" />
+
+                <!-- Back arm -->
+                <g class="arm arm-back">
+                    <path d="M32 72 L22 86" stroke="url(#skinGrad)" stroke-width="6" stroke-linecap="round" />
+                </g>
+
+                <!-- Front arm -->
+                <g class="arm arm-front">
+                    <path d="M58 72 L68 84" stroke="url(#skinGrad)" stroke-width="6" stroke-linecap="round" />
+                </g>
+
+                <!-- Head -->
+                <ellipse cx="45" cy="42" rx="24" ry="26" fill="url(#skinGrad)" />
+                <path d="M28 52 Q45 58 62 52" fill="none" stroke="rgba(180,100,70,0.15)" stroke-width="3" stroke-linecap="round" />
+
+                <!-- Hair base -->
+                <path d="M21 38 Q45 8 69 38 Q68 28 45 18 Q22 28 21 38" fill="url(#hairGrad)" />
+                <path d="M24 34 Q45 22 66 34 Q45 30 24 34" fill="#6d28d9" opacity="0.35" />
+
+                <!-- Front pigtail -->
+                <ellipse cx="24" cy="36" rx="9" ry="14" fill="url(#hairGrad)" transform="rotate(-18 24 36)" />
+                <circle cx="22" cy="24" r="5" fill="#f472b6" />
+
+                <!-- Bangs -->
+                <path d="M26 30 Q32 42 36 34 Q40 44 45 32 Q50 44 54 34 Q58 42 64 30 Q45 24 26 30" fill="url(#hairGrad)" />
+
+                <!-- Eyes -->
+                <g class="eye-near">
+                    <ellipse cx="36" cy="42" rx="6.5" ry="7.5" fill="#fff" />
+                    <ellipse cx="36" cy="43" rx="4.5" ry="5.5" fill="#7c3aed" />
+                    <circle cx="36" cy="44" r="2.2" fill="#312e81" />
+                    <circle cx="34.5" cy="41" r="1.4" fill="#fff" />
+                    <circle cx="37.5" cy="45" r="0.7" fill="#fff" opacity="0.8" />
+                    <path d="M30 36 Q36 34 42 36" fill="none" stroke="#4c1d95" stroke-width="1.2" stroke-linecap="round" />
+                </g>
+                <g class="eye-far">
+                    <ellipse cx="54" cy="43" rx="5" ry="6" fill="#fff" />
+                    <ellipse cx="54" cy="44" rx="3.5" ry="4.5" fill="#7c3aed" />
+                    <circle cx="54" cy="45" r="1.8" fill="#312e81" />
+                    <circle cx="53" cy="42.5" r="1" fill="#fff" />
+                    <path d="M49 38 Q54 36 59 38" fill="none" stroke="#4c1d95" stroke-width="1" stroke-linecap="round" />
+                </g>
+
+                <!-- Nose & blush -->
+                <ellipse cx="47" cy="48" rx="1.6" ry="1.2" fill="#efb09a" opacity="0.85" />
+                <ellipse cx="31" cy="50" rx="5" ry="3" fill="url(#cheekGrad)" />
+                <ellipse cx="58" cy="51" rx="4" ry="2.5" fill="url(#cheekGrad)" />
+
+                <!-- Mouth -->
+                <path d="M43 54 Q47 57 51 54" fill="none" stroke="#e879a9" stroke-width="1.6" stroke-linecap="round" />
+                <path d="M44 54 Q47 55.5 50 54" fill="#fda4af" opacity="0.65" />
+            </svg>
+        </div>
+    </aside>
+
+    <!-- Nav -->
+    <nav class="nav" aria-label="Main navigation">
+        <div class="container nav-wrap">
+            <a href="#home" class="logo">Portfolio</a>
+            <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-menu"
+                aria-label="Open menu">
+                <span></span><span></span><span></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto gap-lg-3">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#resume">Timeline</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-                <a href="#contact" class="btn btn-primary-custom ms-lg-4">Hire Me</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Work</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#resume" class="nav-link">Resume</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7">
-                    <h1 class="hero-name">Harshida Joshi</h1>
-                    <p class="hero-title text-uppercase ls-wide">Full-Stack Web Developer | AI Solutions Architect
+    <main>
+        <!-- Hero -->
+        <header id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text fade-up">
+                    <div class="hero-title-wrap">
+                        <span class="hero-glow" aria-hidden="true"></span>
+                        <h1 class="hero-title">
+                            <span class="hero-greeting">Hi, I'm </span><span class="hero-name">Harshida Joshi</span>
+                        </h1>
+                        <p class="hero-tagline">Software Developer | AI &amp; Data Science Engineer</p>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/HarshidaJoshi" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/joshi-harshida-2a720222b" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-main">See My Work</a>
+                        <a href="HARSHIDA RESUME.pdf" class="btn btn-outline" target="_blank"
+                            rel="noopener noreferrer" download="HARSHIDA_RESUME.pdf">Download CV</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual fade-up delay-1" aria-hidden="true">
+                    <div class="hero-glass">
+                        <div class="glass-stat">
+                            <span class="glass-num">2+</span>
+                            <span class="glass-label">Years Building</span>
+                        </div>
+                        <div class="glass-stat">
+                            <span class="glass-num">3+</span>
+                            <span class="glass-label">Live Work</span>
+                        </div>
+                        <div class="glass-stat">
+                            <span class="glass-num">4</span>
+                            <span class="glass-label">Own Projects</span>
+                        </div>
+                        <div class="glass-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title fade-up">About Me</h2>
+                <div class="about-box fade-up">
+                    <p>
+                        Full Stack Developer with <strong>2 years</strong> of experience in web application development,
+                        backend systems, and database design. I build ERP platforms, REST APIs, and AI-powered tools.
                     </p>
-                    <p class="hero-tagline mb-5">I build scalable web applications and AI-powered systems that solve
-                        real-world problems.</p>
-                    <div class="hero-btns d-flex flex-wrap gap-3 justify-content-lg-start justify-content-center">
-                        <a href="#projects" class="btn btn-primary-custom">View Projects <i
-                                class="fas fa-arrow-right ms-2"></i></a>
-                        <a href="HARSHIDA JOSHI CV.pdf" class="btn btn-outline-custom" target="_blank"
-                            rel="noopener noreferrer" download="HARSHIDA_JOSHI_CV.pdf">Download Resume <i
-                                class="fas fa-download ms-2"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-5 d-none d-lg-block">
-                    <div class="hero-avatar-wrapper">
-                        <img src="images/profile.jpeg" alt="Harshida Joshi">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="section-padding">
-        <div class="container">
-            <div class="row align-items-center column-reverse-sm">
-                <div class="col-lg-6 fade-in">
-                    <h2 class="section-title">Professional Summary</h2>
-                    <p class="fs-5 text-secondary">
-                        With over <strong>3+ years</strong> of experience, I specialize in architecting <strong>scalable
-                            enterprise systems</strong>, specifically modular ERP platforms. My focus is on writing
-                        production-ready code that integrates <strong>Artificial Intelligence</strong> to drive
-                        predictive business impacts.
-                    </p>
-                    <p class="fs-5 text-secondary mt-4">
-                        I am currently developing institutional automation suites at Alpha Computers, ensuring
-                        high-concurrency data integrity and future-proof backend logic.
+                    <p>
+                        Currently pursuing M.Tech in Artificial Intelligence and Data Science at Parul University —
+                        specializing in modern AI technologies for intelligent, data-driven solutions.
                     </p>
                 </div>
-                <div class="col-lg-5 offset-lg-1 mb-5 mb-lg-0 fade-in">
-                    <div
-                        class="p-5 bg-primary bg-opacity-10 border border-primary border-opacity-25 rounded-4 text-center">
-                        <h3 class="display-3 fw-bold mb-1">3+</h3>
-                        <p class="text-primary fw-bold mb-0">Years of Professional Excellence</p>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title fade-up">Work Experience</h2>
+                <div class="timeline-h">
+                    <div class="timeline-h-track">
+                        <span class="timeline-h-line" aria-hidden="true"></span>
+
+                        <article class="timeline-h-item fade-up">
+                            <span class="timeline-h-dot"></span>
+                            <div class="timeline-h-card">
+                                <p class="tl-company">Alpha Computers · Rajkot</p>
+                                <p class="tl-title">Software Developer</p>
+                                <p class="tl-date">11/2024 — Present</p>
+                            </div>
+                        </article>
+
+                        <article class="timeline-h-item fade-up delay-1">
+                            <span class="timeline-h-dot"></span>
+                            <div class="timeline-h-card">
+                                <p class="tl-company">I Techno Peak · Rajkot</p>
+                                <p class="tl-title">Full Stack Developer</p>
+                                <p class="tl-date">10/2023 — 11/2024</p>
+                            </div>
+                        </article>
+
+                        <article class="timeline-h-item fade-up delay-2">
+                            <span class="timeline-h-dot"></span>
+                            <div class="timeline-h-card">
+                                <p class="tl-company">GEMs Computer · Rajkot</p>
+                                <p class="tl-title">Web Developer (Part Time)</p>
+                                <p class="tl-date">06/2022 — 08/2023</p>
+                            </div>
+                        </article>
+
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section-padding bg-dark bg-opacity-10">
-        <div class="container">
-            <h2 class="section-title">Core Competencies</h2>
-            <div class="row g-4 mt-2">
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="skill-card">
-                        <i class="fas fa-server skill-icon"></i>
-                        <h4>Backend Architecture</h4>
-                        <p class="text-secondary small">PHP (Laravel/Core), Python (Flask), RESTful API Design, Database
-                            Optimization (MySQL).</p>
+        <!-- Projects -->
+        <section id="projects" class="section section-projects">
+            <div class="container">
+                <h2 class="section-title fade-up">Projects</h2>
+
+                <!-- 01 Professional Work -->
+                <div class="projects-group fade-up">
+                    <div class="group-header">
+                        <span class="group-num">01</span>
+                        <div>
+                            <h3 class="group-title">Professional Work</h3>
+                            <p class="group-sub">3+ live company / client systems</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="skill-card">
-                        <i class="fas fa-brain skill-icon"></i>
-                        <h4>AI & Automation</h4>
-                        <p class="text-secondary small">NLP Integration, Explainable AI (BERT), ML-based Prediction
-                            Models, Data Synthesis.</p>
+
+                    <div class="systems-track systems-pro">
+                        <article class="sys-block">
+                            <div class="sys-index">01</div>
+                            <div class="sys-content">
+                                <div class="sys-meta-row">
+                                    <span class="sys-badge sys-badge-pro">Professional / Company Project</span>
+                                    <span class="sys-org">Alpha Softwares</span>
+                                </div>
+                                <h4 class="sys-name">Alpha Campus</h4>
+                                <p class="sys-desc">All-in-one education ERP for pre-schools, schools, colleges &amp;
+                                    coaching institutes — inquiry to results, fees, hostel, transport, library &amp;
+                                    communication. Contributed modules including Alumni Management, Student Feedback
+                                    analytics, Staff Lesson Planner &amp; WhatsApp integration.</p>
+                                <div class="sys-footer">
+                                    <div class="sys-tags">
+                                        <span>PHP</span><span>Laravel</span><span>ERP</span><span>WhatsApp API</span>
+                                    </div>
+                                    <a href="https://alphacampus.in/" target="_blank" rel="noopener noreferrer"
+                                        class="sys-link">Live System <i class="fas fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="sys-block sys-block-offset">
+                            <div class="sys-index">02</div>
+                            <div class="sys-content">
+                                <div class="sys-meta-row">
+                                    <span class="sys-badge sys-badge-pro">Professional / Company Project</span>
+                                    <span class="sys-org">Alpha Softwares</span>
+                                </div>
+                                <h4 class="sys-name">Chamunda Seva</h4>
+                                <p class="sys-desc">Management platform for Shri Chamunda Mataji Seva Trust, Chotila —
+                                    secure sign-in with mobile/email authentication for trust operations &amp;
+                                    seva administration.</p>
+                                <div class="sys-footer">
+                                    <div class="sys-tags">
+                                        <span>PHP</span><span>Laravel</span><span>ERP</span><span>Auth</span>
+                                    </div>
+                                    <a href="https://chamunda.alphaerp.in/auth/login" target="_blank"
+                                        rel="noopener noreferrer" class="sys-link">Live System <i
+                                            class="fas fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="sys-block">
+                            <div class="sys-index">03</div>
+                            <div class="sys-content">
+                                <div class="sys-meta-row">
+                                    <span class="sys-badge sys-badge-pro">Professional / Company Project</span>
+                                    <span class="sys-org">Alpha Softwares</span>
+                                </div>
+                                <h4 class="sys-name">PrashikshanLive</h4>
+                                <p class="sys-desc">Prashikshan Education Management System — role-based sign-in,
+                                    email authentication &amp; institutional management for Prashikshan education
+                                    operations. Developed by Alpha Softwares.</p>
+                                <div class="sys-footer">
+                                    <div class="sys-tags">
+                                        <span>PHP</span><span>Laravel</span><span>Education ERP</span>
+                                    </div>
+                                    <a href="https://prashikshanlive.alphaerp.in/" target="_blank"
+                                        rel="noopener noreferrer" class="sys-link">Live System <i
+                                            class="fas fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </article>
                     </div>
+
                 </div>
-                <div class="col-lg-4 col-md-12 fade-in">
-                    <div class="skill-card">
-                        <i class="fas fa-heart skill-icon"></i>
-                        <h4>Interests & Hobbies</h4>
-                        <p class="text-secondary small">Travelling, Reading, and exploring modern trends in full-stack
-                            architecture.</p>
-                        <p class="text-secondary small mt-3 italic text-primary">"Always curious, always building."</p>
+
+                <!-- 02 Independent Projects -->
+                <div class="projects-group projects-group-ind fade-up">
+                    <div class="group-header">
+                        <span class="group-num group-num-ind">02</span>
+                        <div>
+                            <h3 class="group-title">Independent Projects</h3>
+                            <p class="group-sub">4 personal builds — designed, developed &amp; owned by me</p>
+                        </div>
+                    </div>
+
+                    <div class="systems-ind-grid">
+                        <article class="sys-block sys-ind sys-ind-card">
+                            <div class="sys-index">01</div>
+                            <div class="sys-content">
+                                <div class="sys-meta-row">
+                                    <span class="sys-badge sys-badge-ind">Independent Project</span>
+                                    <span class="sys-period">08/2025 — Present</span>
+                                </div>
+                                <h4 class="sys-name">Lumina AI — RAG PDF Assistant</h4>
+                                <p class="sys-desc">Privacy-focused PDF research assistant using Python, FastAPI, Ollama,
+                                    FAISS &amp; LangChain. Hybrid semantic + BM25 retrieval, context-aware answers with
+                                    page-level citations, RAG evaluation metrics &amp; MCP tools.</p>
+                                <div class="sys-footer">
+                                    <div class="sys-tags">
+                                        <span>Python</span><span>FastAPI</span><span>LangChain</span><span>FAISS</span>
+                                    </div>
+                                    <a href="https://github.com/HarshidaJoshi/Lumina-AI" target="_blank"
+                                        rel="noopener noreferrer" class="sys-link sys-link-gh">
+                                        <i class="fab fa-github"></i> View Repository
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="sys-block sys-ind sys-ind-card">
+                            <div class="sys-index">02</div>
+                            <div class="sys-content">
+                                <div class="sys-meta-row">
+                                    <span class="sys-badge sys-badge-ind">Independent Project</span>
+                                </div>
+                                <h4 class="sys-name">ResearchIQ</h4>
+                                <p class="sys-desc">Independent research intelligence project on GitHub — explore
+                                    the repository for full implementation details.</p>
+                                <div class="sys-footer">
+                                    <div class="sys-tags">
+                                        <span>GitHub</span><span>Research</span>
+                                    </div>
+                                    <a href="https://github.com/HarshidaJoshi/ResearchIQ" target="_blank"
+                                        rel="noopener noreferrer" class="sys-link sys-link-gh">
+                                        <i class="fab fa-github"></i> View Repository
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="sys-block sys-ind sys-ind-card">
+                            <div class="sys-index">03</div>
+                            <div class="sys-content">
+                                <div class="sys-meta-row">
+                                    <span class="sys-badge sys-badge-ind">Independent Project</span>
+                                    <span class="sys-lang">Jupyter Notebook</span>
+                                </div>
+                                <h4 class="sys-name">Global Pollution &amp; Energy Recovery</h4>
+                                <p class="sys-desc">Analyzes global pollution data &amp; predicts energy recovery —
+                                    preprocessing, EDA, Linear &amp; Logistic Regression models.</p>
+                                <div class="sys-footer">
+                                    <div class="sys-tags">
+                                        <span>Python</span><span>Pandas</span><span>Scikit-learn</span>
+                                    </div>
+                                    <a href="https://github.com/HarshidaJoshi/Global-Pollution-Energy-Recovery"
+                                        target="_blank" rel="noopener noreferrer" class="sys-link sys-link-gh">
+                                        <i class="fab fa-github"></i> View Repository
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="sys-block sys-ind sys-ind-card">
+                            <div class="sys-index">04</div>
+                            <div class="sys-content">
+                                <div class="sys-meta-row">
+                                    <span class="sys-badge sys-badge-ind">Independent Project</span>
+                                    <span class="sys-lang">Jupyter Notebook</span>
+                                </div>
+                                <h4 class="sys-name">Food Delivery Time Prediction</h4>
+                                <p class="sys-desc">ML pipeline for delivery time prediction &amp; Fast vs Delayed
+                                    classification — Linear Regression, Naive Bayes, KNN &amp; Decision Tree.</p>
+                                <div class="sys-footer">
+                                    <div class="sys-tags">
+                                        <span>Python</span><span>Scikit-learn</span><span>Seaborn</span>
+                                    </div>
+                                    <a href="https://github.com/HarshidaJoshi/Food-Delivery-Time-Prediction"
+                                        target="_blank" rel="noopener noreferrer" class="sys-link sys-link-gh">
+                                        <i class="fab fa-github"></i> View Repository
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Project Case Studies</h2>
-            <div class="row g-4">
-                <div class="col-lg-6 fade-in">
-                    <div class="project-card">
-                        <p class="project-tech">Laravel • ERP • Enterprise</p>
-                        <h3>School ERP System</h3>
-                        <p class="text-secondary">Modular institutional suite managing fee recursion, high-concurrency
-                            student records, and automated financial diagnostics for multiple live institutes.</p>
-                        <div class="project-impact">Impact: Reduced administrative latency by 40% across target
-                            organizations.</div>
-                    </div>
-                </div>
-                <div class="col-lg-6 fade-in">
-                    <div class="project-card">
-                        <p class="project-tech">Python • BERT • NLP</p>
-                        <h3>Explainable QA System</h3>
-                        <p class="text-secondary">A semantic question-answering engine built on BERT that identifies
-                            source context and provides transparent reasoning for generated answers.</p>
-                        <div class="project-impact">Outcome: High-fidelity document analysis with grounded evidence.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 fade-in">
-                    <div class="project-card">
-                        <p class="project-tech">PHP • Real-time • Hospitality</p>
-                        <h3>Restaurant Mgmt Suite</h3>
-                        <p class="text-secondary">A multi-panel digital interface synchronizing order-to-billing across
-                            Admin, Kitchen, and Waiter modules with QR integration.</p>
-                        <div class="project-impact">Outcome: 25% improvement in table turnover and order accuracy.</div>
-                    </div>
-                </div>
-                <div class="col-lg-6 fade-in">
-                    <div class="project-card">
-                        <p class="project-tech">Python • ML • Prediction</p>
-                        <h3>Student Mark Predictor</h3>
-                        <p class="text-secondary">ML model predicting academic performance based on attendance and
-                            biometric historical data to identify at-risk students.</p>
-                        <div class="project-impact">Outcome: 92% accurate early-intervention predictions.</div>
-                    </div>
-                </div>
+        <!-- Research -->
+        <section id="research" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title fade-up">Research</h2>
+                <article class="research-card fade-up">
+                    <span class="research-tag">PICET 2026 · 01/05/2026</span>
+                    <h3>Deep Learning in Medical Image Diagnosis</h3>
+                    <p>Research on CNNs, transformers, hybrid models &amp; MedSAM for X-ray, CT, MRI &amp; ultrasound
+                        diagnosis — covering explainability, federated learning &amp; clinical validation.</p>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Detailed Experience & Education Timelines -->
-    <section id="resume" class="section-padding bg-dark bg-opacity-10">
-        <div class="container">
-            <div class="row g-5">
-                <!-- Professional Journey -->
-                <div class="col-lg-6 fade-in">
-                    <h2 class="section-title"><i class="fas fa-briefcase me-3 opacity-50"></i> Professional Journey</h2>
-                    <div class="timeline-container">
-                        <div class="mb-5 position-relative">
-                            <div class="timeline-dot bg-primary rounded-circle shadow-lg"></div>
-                            <h4 class="text-white mb-1">Laravel Architect</h4>
-                            <p class="text-primary fw-bold small mb-2">Alpha Computers • 2024 — PRESENT</p>
-                            <p class="text-secondary small">Architecting high-concurrency ERP systems for the education
-                                sector. Solving complex data bottlenecks and implementing predictive AI modules.</p>
-                        </div>
-                        <div class="position-relative">
-                            <div class="timeline-dot bg-secondary rounded-circle shadow-lg"
-                                style="background: var(--secondary) !important;"></div>
-                            <h4 class="text-white mb-1">PHP Developer</h4>
-                            <p class="text-secondary fw-bold small mb-2">i techno peak • 2023 — 2024</p>
-                            <p class="text-secondary small">Focused on custom web business logic, SME automation
-                                portals, and efficient database schema design.</p>
+        <!-- Skills -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title fade-up">Skills</h2>
+                <div class="skills-wrap fade-up">
+                    <div class="skill-group">
+                        <h4>Languages</h4>
+                        <div class="skill-tags">
+                            <span>Python</span><span>PHP</span><span>JavaScript</span><span>SQL</span>
                         </div>
                     </div>
-                </div>
-
-                <!-- Academic Foundation -->
-                <div class="col-lg-6 fade-in">
-                    <h2 class="section-title"><i class="fas fa-graduation-cap me-3 opacity-50"></i> Academic Foundation
-                    </h2>
-                    <div class="timeline-container">
-                        <div class="mb-5 position-relative">
-                            <div class="timeline-dot bg-primary rounded-circle shadow-lg"></div>
-                            <h4 class="text-white mb-1">M.Tech AI & Data Science</h4>
-                            <p class="text-primary fw-bold small mb-2">Parul University • 2025 — PRESENT</p>
-                            <p class="text-secondary small">Focusing on deep learning architectures and advanced data
-                                analytics.</p>
+                    <div class="skill-group">
+                        <h4>Web &amp; Full Stack</h4>
+                        <div class="skill-tags">
+                            <span>Laravel</span><span>REST APIs</span><span>HTML5</span><span>CSS3</span>
+                            <span>Bootstrap</span><span>jQuery</span><span>MVC</span>
                         </div>
-                        <div class="mb-5 position-relative">
-                            <div class="timeline-dot bg-secondary rounded-circle shadow-lg"
-                                style="background: var(--secondary) !important;"></div>
-                            <h4 class="text-white mb-1">B.E. Computer Science</h4>
-                            <p class="text-secondary fw-bold small mb-2">GTU • 2021 — 2024</p>
-                            <div
-                                class="badge bg-secondary bg-opacity-10 text-secondary border border-secondary border-opacity-25 px-3 py-2 mt-1">
-                                Grade: 8.87 CGPA</div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>AI &amp; ML</h4>
+                        <div class="skill-tags">
+                            <span>Machine Learning</span><span>Generative AI</span><span>OpenAI API</span>
+                            <span>LLMs</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span>
                         </div>
-                        <div class="position-relative">
-                            <div class="timeline-dot bg-secondary rounded-circle shadow-lg"
-                                style="background: var(--secondary) !important;"></div>
-                            <h4 class="text-white mb-1">Diploma in Computer Engineering</h4>
-                            <p class="text-secondary fw-bold small mb-2">GTU • 2018 — 2021</p>
-                            <div
-                                class="badge bg-secondary bg-opacity-10 text-secondary border border-secondary border-opacity-25 px-3 py-2 mt-1">
-                                Grade: 9.62 CGPA</div>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Tools</h4>
+                        <div class="skill-tags">
+                            <span>Git</span><span>GitHub</span><span>Postman</span><span>VS Code</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-5 pt-4 fade-in">
-                <a href="HARSHIDA JOSHI CV.pdf" class="btn btn-outline-custom" target="_blank" rel="noopener noreferrer"
-                    download="HARSHIDA_JOSHI_CV.pdf">Access Full PDF Credentials <i
-                        class="fas fa-file-pdf ms-2"></i></a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- AI Feature -->
-    <section class="section-padding bg-primary bg-opacity-10">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 fade-in">
-                    <h2 class="section-title">AI Portfolio Assistant</h2>
-                    <p class="fs-5 text-secondary">A demonstration of real AI integration. Ask questions about
-                        Harshida's technical stack or projects to see her NLP implementation in action.</p>
+        <!-- Resume -->
+        <section id="resume" class="section">
+            <div class="container">
+                <h2 class="section-title fade-up">Education &amp; Resume</h2>
+                <div class="edu-grid fade-up">
+                    <article class="edu-card">
+                        <span class="edu-date">07/2025 — Present</span>
+                        <h3>M.Tech — AI &amp; Data Science</h3>
+                        <p>Parul University, Vadodara</p>
+                    </article>
+                    <article class="edu-card">
+                        <span class="edu-date">06/2021 — 06/2024</span>
+                        <h3>B.E. Computer Science</h3>
+                        <p>GTU, Rajkot · CGPA 8.43/10</p>
+                    </article>
+                    <article class="edu-card">
+                        <span class="edu-date">06/2018 — 07/2021</span>
+                        <h3>Diploma Computer Engineering</h3>
+                        <p>GTU, Gondal · CGPA 9.62/10</p>
+                    </article>
                 </div>
-                <div class="col-lg-6 fade-in">
-                    <div class="ai-chat-window">
-                        <div class="chat-header text-white"><i class="fas fa-robot me-2"></i> HJ_Neural_Assistant v3
-                        </div>
-                        <div id="chat-body" class="chat-body">
-                            <div class="chat-msg bot-msg">Initializing Harshida's Intelligence Core... I can discuss her
-                                Laravel ERP projects or AI research. How can I help?</div>
-                        </div>
-                        <div class="p-3 border-top border-white border-opacity-10 d-flex gap-2">
-                            <input type="text" id="chat-input" class="form-control-custom flex-grow-1"
-                                placeholder="Type 'erp' or 'bert'...">
-                            <button id="chat-send" class="btn btn-primary rounded-circle"><i
-                                    class="fas fa-paper-plane"></i></button>
-                        </div>
-                    </div>
+                <div class="resume-btn-wrap fade-up">
+                    <a href="HARSHIDA RESUME.pdf" class="btn btn-main" target="_blank" rel="noopener noreferrer"
+                        download="HARSHIDA_RESUME.pdf">
+                        <i class="fas fa-file-pdf"></i> Download Full Resume
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Contact & Footer -->
-    <footer id="contact" class="container py-10">
-        <div class="fade-in text-center mb-5">
-            <h2 class="display-3 fw-bold">Initiate Connection</h2>
-            <p class="text-secondary fs-5">Interested in building together? Let's connect.</p>
-        </div>
-
-        <div class="social-links mb-5">
-            <a href="https://github.com/HarshidaJoshi" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/joshi-harshida-2a720222b" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="mailto:harshidhijoshi@gmail.com"><i class="fas fa-envelope"></i></a>
-        </div>
-
-        <p class="opacity-30 small mb-0">&copy; 2026 Harshida Joshi. Engineered for Perfection.</p>
+    <footer class="site-footer">
+        <p class="copyright">© 2026 Harshida Joshi</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
